@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The LALALA theater - homepage</title>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="assets/css/general-information.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <div>
+            <img src="images/logo/logo.png" alt="logo" width="120px">
+            <p class="theater-name">The <br>LALALA <br>Theater</p>
+        </div>
+
+        <div>
+            <p class="covid-19">
+                Covid-19 Guidance after 19 July. 
+                <br> 
+                Here’s how we’re working to keep you safe. 
+            </p>
+            <div class="search">
+                <form id="form4" method="get">
+                    <input id="sbox4"  id="s" name="s" type="text" />
+                    <button id="sbtn4" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div><a href="http://127.0.0.1:5500/index.html">HOME</a></div>
+        <div><a href="http://127.0.0.1:5500/EventsTickets.html">Events & Tickets</a></div>
+        <div><a id="general-information" href="http://127.0.0.1:5500/general-information.html">Plan your visit</a></div>      
+        <div><a href="http://127.0.0.1:5500/shop.html">Shop</a></div>    
+    </nav>
+
+    <img class="ham" src="images/icons/ham-menu.png" alt="ham-menu" width="80px">
+
+
+    <main>
+        <section class="square-area">
+            <div class="one"></div>
+
+            <div class="two">
+                <p>
+                    THE
+                    <br>LALALA
+                    <br>THEATER
+                </p>
+                <p>
+                    GENERAL
+                    <br>INFORMATION
+                </p>
+            </div>
+            
+           
+            <a href="#located" class="three">
+                <p>LOCATED &</p>
+                <p>OPENING</p>
+                <p>HOURS</p>
+            </a>
+            
+            <a href="#seat" class="four">
+                <p>SEAT MAP</p>
+            </a>
+
+            <a href="#facilities" class="five">
+                <p>FACILITIES</p>
+            </a>
+
+            <div class="six"></div>
+        
+    
+            <div class="seven"></div>
+
+            <a href="#eat" class="eight">
+                <p>EAT & FOOD</p>
+            </a>
+
+            <div class="nine">
+                <p>80th</p>
+                <p>anniversary</p>
+                <img src="images/general-information/80aniv.png" width="740px" height="350px">
+            </div>
+
+            <div class="ten"></div>
+
+            <a href="#faqs" class="eleven">
+                <p>VENUE FAQs</p>
+            </a>
+            
+            <div class="twelve"></div>
+    
+
+
+            <div class="thirteen"></div>
+            
+            <div class="fourteen">
+                <p>SCHOOLS &</p>
+                <p>COLLEGES</p>
+            </div>
+
+            <div class="fifteen">
+                <p>COMMUNITY</p>
+            </div>
+
+            <div class="sixteen">
+                <p>HIRE</p>
+            </div>
+
+            <div class="seventeen">
+                <p>OUR STORY</p>
+            </div>
+
+            <div class="eighteen"></div>
+        
+        </section>
+
+
+        <section class="location" id="located">
+            <h2>Located & Opening hours</h2>
+            <div class="data">
+                <img src="images/general-information/outside.jpeg" width="500px">
+                <div class="and">
+                    <p>The LALALA Theater</p>
+                    <p>
+                        6838 Hollywood Blvd, 
+                        <br>Los Angeles, CA 90028 U.S.A 
+                    </p>
+                    <p>
+                        Box Office
+                    </p>
+                    <p>
+                        Events are still available to book online 
+                        <br>and we’re able to answer  questions 
+                        <br>via email: tickets@lalala.odg.us
+                    </p>
+                    <p>
+                        Mon to Thu: 11am – 6pm
+                        <br>Fri: 11am – 4pm
+                        <br>Sat: 11am – 5pm
+                        <br>Sun: 11am – 5pm
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seat" id="seat">
+            <h2>Seat Map</h2>
+
+            <div class="pictures-area">
+                <button id="london" class="tablink">
+                    <div>
+                        <img src="images/general-information/main-theater.png" width="350px">
+                        <p>MAIN THEATER</p>
+                    </div>
+                </button>
+                <button id="paris" class="tablink">
+                    <div>
+                        <img src="images/general-information/adaptable-theater.png" width="350px">
+                        <p>ADAPTABLE THEATER</p> 
+                    </div>
+                </button>
+                <button id="tokyo" class="tablink" onclick="openCity('tokyo',this, 'thistle')">
+                    <div>
+                        <img src="images/general-information/concert-hall.png" width="350px">
+                        <p>CONCERT HALL</p>
+                    </div>
+                </button>
+                <button id="oslo" class="tablink" onclick="openCity('oslo',this, 'yellowgreen')">
+                    <div>
+                        <img src="images/general-information/audio-visual-hall.png" width="350px">
+                        <p>AUDIO-VISUAL HALL</p>
+                    </div>
+                </button>
+            </div>
+
+            <div class="map-area">
+                <div id="london-map" class="tabcontent">
+                    <img class="london-img" src="images/general-information/main-map.png" width="1547px">
+                </div>
+                <div id="paris-map" class="tabcontent">
+                    <img class="paris-img" src="images/general-information/adaptable-map.png" width="1547px">
+                </div>
+                <div id="tokyo-map" class="tabcontent">
+                    <img class="tokyo-img" src="images/general-information/concert-map.png" width="1547px">
+                </div>
+                <div id="oslo-map" class="tabcontent">
+                    <img class="oslo-img" src="images/general-information/audio-map.png" width="1547px">
+                </div>
+            </div>
+
+            
+
+            <!-- <div class="theater">
+                <div>
+                    <img src="images/general-information/main-theater.png" width="350px">
+                    <p>MAIN THEATER</p>
+                </div>
+                <div>
+                    <img src="images/general-information/adaptable-theater.png" width="350px">
+                    <p>ADAPTABLE THEATER</p> 
+                </div>
+                <div>
+                    <img src="images/general-information/concert-hall.png" width="350px">
+                    <p>CONCERT HALL</p>
+                </div>
+                <div>
+                    <img src="images/general-information/audio-visual-hall.png" width="350px">
+                    <p>AUDIO-VISUAL HALL</p>
+                </div>
+            </div>
+
+            <div class="seat-map">
+                <img class="map1" src="images/general-information/main-map.png" width="1500px">
+                <img class="map2" src="images/general-information/adaptable-map.png">
+                <img class="map3" src="images/general-information/concert-map.png">
+                <img class="map4" src="images/general-information/audio-map.png">
+
+            </div> -->
+        </section>
+
+        <section class="facilities" id="facilities">
+            <h2>Facilities</h2>
+            <div class="facilities-2">
+                <div>
+                    <img src="images/facilities/info-plaza.png" width="350px">
+                    <p>INFO-PLAZA</p>
+                </div>
+                <div>
+                    <img src="images/facilities/nursery.png" width="350px">
+                    <p>NURSERY</p>
+                </div>
+                <div>
+                    <img src="images/facilities/restaurant.png" width="350px">
+                    <p>RESTAURANT&CAFFE</p>
+                </div>
+                <div>
+                    <img src="images/facilities/information.png" width="350px">
+                    <p>INFORMATION</p>
+                </div>
+
+
+                <div>
+                    <img src="images/facilities/studio.png" width="350px">
+                    <p>STUDIO BOOTH</p>
+                </div>
+                <div>
+                    <img src="images/facilities/work.png" width="350px">
+                    <p>WORK SPACE</p>
+                </div>
+                <div>
+                    <img src="images/facilities/garden.png" width="350px">
+                    <p>GARDEN</p>
+                </div>
+                <div>
+                    <img src="images/facilities/preview.png" width="350px">
+                    <p>PREVIEW ROOM</p>
+                </div>  
+            </div>
+        </section>
+
+        <section class="eat" id="eat">
+            <h2>EAT & FOOD</h2>
+            <div class="restaurant">
+                <img id="cafe" src="images/restaurants/cafe-2.png" width="1700px">
+                <img id="cafe-2" src="images/restaurants/restaurant.jpeg" width="550px">
+                
+                <div class="intro">
+                    <p>LALALA restaurant&cafe is family-friendly. It is located on the ground floor of the LALALA.</p>
+                    <p>We have some restaurant & cafe. We are serving fresh and delicious meals, including hot and cold drinks. We also have many different variety of food such as, italian, french, mexican, spanish, chinese, korean and so on. As a matter of course, american food, too. Only gests who has a plan in The LALALA theater in that day. It will not be crowded because we are going to control for avoiding gathering with many people. Everyone can be relieved for covid-19. We really would like you to have fun in our restaurants and cafes. Enjoy, your meal! 
+                    </p>
+                    <img class="frog" src="images/restaurants/frog-3.png" width="600px">
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faqs" id="faqs">
+            <h2>VENUE FAQ</h2>
+            <div class="both">
+                <p class="help">These things will help you...</p>
+                <p class="welcome">Welcome back! It is better to check this pages and look for same question of you before you ask us because it is going to be faster and more clear. It is organized very well. You can search them on our searche bar using key words,too. </p>
+                
+                <div>
+                    <p class="question">Are there vaccination or testing requirements for attending an event?</p>
+                    <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error voluptatem exercitationem tenetur ad debitis architecto, alias temporibus eveniet veritatis dignissimos at unde hic, modi quos autem eum porro velit repellat.</p>
+                </div>
+
+                <div>
+                    <p class="question">How will I get my tickets?</p>
+                    <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia dolorum a fuga provident ducimus eaque id praesentium, blanditiis, porro rem fugit at maxime perferendis debitis itaque ratione voluptatum mollitia nobis.</p>
+                </div>
+
+                <div>
+                    <p class="question">Can I transfer my ticket to someone else?</p>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio harum autem placeat enim ullam modi.</p>
+                </div>
+
+                <div>
+                    <p class="question">What is the refund policy? How do I request a refund?</p>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut voluptatum minima earum natus, iusto distinctio aliquid molestiae consectetur veniam?</p>
+                </div>                
+
+            </div>
+
+
+
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <h2>Contact us</h5>
+        <section class="upper">
+            <div class="left-area">
+                <p class="large">About</p>
+                <select id = "myList" onchange = "favTutorial()" >  
+                    <option> Your booking </option>  
+                    <option> Feedback </option>  
+                    <option> Hiring a venue </option>  
+                    <option> Parking </option>  
+                    <option> Supporting the Lalala </option>  
+                    <option> Website </option>  
+                    <option> Something else </option>  
+                </select>  
+            </div>
+            <div class="right-area">
+                <div>
+                    <p class="large">Contact the Box office</p>
+                    <p class="mini">For queries relating to your booking, please see our FAQs or contact us on: </p>
+                </div>
+                <div>
+                    <p class="large">tickets@lalala.odg.us</p>
+                    <p class="mini">We aim to respond within 24 hrs</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="line-area">
+            <div class="building">
+                <img src="images/icons/building.png" alt="building" width="130px" height="130px">
+
+                <div class="text">
+                    <p class="anniversary">80th anniversary</p>
+                    <p class="multimedia">MULTIMEDIA <br>GUIDES TO POLISH CULTURE</p>
+                </div>
+            </div>
+            
+            <div class="sns">
+                <a href="https://www.facebook.com/">
+                    <img src="images/icons/facebook.png" alt="facebook" width="70px">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/icons/instagram.png" alt="instagram" width="70px">
+                </a>
+                <a href="https://www.pinterest.com/">
+                    <img src="images/icons/pin.png" alt="pin" width="70px">
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <img src="images/icons/twitter.png" alt="twitter" width="70px">
+                </a>
+                
+            </div>
+        </div>
+
+        <p class="mini-2">© 2021 , 6838 Hollywood Blvd, Los Angeles, CA 90028 U.S.A </p>
+        
+    </footer>
+   
+
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/6c4cf5e3f5.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+				
+    <script src="assets/js/general-information.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;500;600;700;900&display=swap');
+/* 
+font-family: 'Spartan', sans-serif;
+*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p,div{
+    font-family: 'Spartan', sans-serif;
+}
+
+h2{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+
+header{
+    background: #E3E2DE;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div:nth-child(1){
+    display: flex;
+
+}
+
+.theater-name{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 45px;
+    color: #9B1750;
+    margin: 20px 0 0 10px;
+}
+
+header div:nth-child(2){
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.covid-19{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: blue;
+    margin: 0 40px 20px 0;
+}
+
+
+#form4{
+    position:relative;
+    max-width:300px;	
+    margin: 0 100px 20px 0;
+}
+
+#sbox4{
+    height:43px;
+    width: 320px;
+    padding:0 10px; 
+    border-radius:25px;
+    outline:0;
+    background:rgba(255, 255, 255, 0.62);
+}
+
+#sbtn4{
+    height:45px;
+    width:50px;	
+    position:absolute; 
+    left:300px; 
+    top: -1.5px;
+    background: #9B1750;
+    color:white;
+    border-radius:0 25px 25px 0;
+}
+
+#sbtn4 .fa-search{
+    font-size:20px;	
+    position:absolute;
+    top:30%;
+    left:30%;	
+}
+
+#sbtn4:hover{
+    color:#888;
+}
+
+
+
+nav{
+    background: #9B1750;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div{
+    margin: 15px 55px 0 55px;
+}
+
+#shop{
+    color: white;
+}
+
+
+nav a{
+    color: rgba(0, 0, 0, 0.387);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    
+}
+
+nav a:hover{
+    color: white;
+}
+
+.ham{
+    display: none;
+}
+
+
+
+
+
+
+
+
+.big{
+    height: 1300px;
+    background-image: url(../../images/shops/shop-inside.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.information{
+    padding: 200px 0 100px 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+h3{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 3px 4px gray;
+}
+
+.information button{
+    width: 450px;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.744);
+    font-weight: 600;
+    font-size: 40px;
+    box-shadow: 3px 3px 4px gray;
+    margin-top: 20px;
+}
+
+.information button:hover{
+    background-color: rgba(174, 174, 174, 0.874);
+}
+
+.information p{
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 4px gray;
+}
+
+
+.main-picture{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.black-back{
+    background: rgba(0, 0, 0, 0.566);
+    width: 70%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    padding: 65px 0;
+    border-radius: 15px;
+    position: relative;
+}
+
+.black-back p{
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+    font-weight: 900;
+    font-size: 80px;
+    color: white;
+    text-shadow: 3px 3px 4px rgb(113, 113, 113);
+    z-index: 2;
+}
+
+#automatic{
+    width: 100%;
+    height: 670px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+#automatic img {
+    position: absolute;
+    
+}
+
+
+
+
+
+h4{
+    background-color: #EE4C7D;
+    color: white;
+    height: 65px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding: 15px 0 0 50px;
+
+}
+
+.collections-2{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.collections-2 div{
+    margin: 0 20px;
+}
+
+.collections-2 img{
+    width: 900px;
+    height: 300px;
+}
+
+.collections-2 img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.collections-2 p{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+
+
+
+.items{
+    padding: 60px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* height: 1000px;
+    overflow: scroll; */
+}
+
+.items div{
+    margin-bottom: 50px;
+}
+
+.items img{
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+
+.items img:hover{
+    box-shadow: 4px 4px 4px gray;
+}
+
+.items p{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* .tems div:nth-child(1){
+
+} */
+.tems div:nth-child(2){
+    width: 400px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: #5D001D;
+    
+    color: white;
+    padding: 120px;
+}
+
+.upper{
+    display: flex;
+    
+}
+.left-area{
+    display: flex;
+    margin: 30px 10px 0 0;
+    
+}
+
+#myList{
+    width: 600px;
+    height: 50px;
+    border: 2px solid white;
+    margin-left: 20px;
+    padding: 0 20px;
+    font-size: 35px;
+    border-radius: 10px;
+    background: #5D001D;
+    color: white;
+}
+
+.right-area{
+    margin: 30px 10px 0 100px;
+}
+.right-area div{
+    margin-bottom: 30px;
+    
+}
+
+.line-area{
+    height: 170px;
+    margin-top: 100px;
+    padding: 0 50px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+.building{
+    display: flex;
+    align-items: center;
+}
+
+.building img{
+    margin-right: 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 22px;
+}
+
+.anniversary{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.multimedia{
+    margin-top: 15px;
+}
+
+
+.sns{
+    border-left: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 600px;
+}
+
+.sns img{  
+    margin-left: 50px;
+}
+.sns img:hover{
+    width: 73px;
+    height: auto;
+}
+
+
+footer .large{
+    font-size: 45px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+}
+
+footer .large-2{
+    font-size: 45px;
+    margin-left: 30px;
+    
+}
+
+footer .mini{
+    font-size: 28px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+footer .mini-2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 23px;
+    margin-top: 15px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+    

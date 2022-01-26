@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;500;600;700;900&display=swap');
+/* 
+font-family: 'Spartan', sans-serif;
+*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p,div{
+    font-family: 'Spartan', sans-serif;
+}
+
+
+h2{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+h3{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+
+}
+
+h4{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+
+header{
+    background: #E3E2DE;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div:nth-child(1){
+    display: flex;
+
+}
+
+.theater-name{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 45px;
+    color: #9B1750;
+    margin: 20px 0 0 10px;
+}
+
+header div:nth-child(2){
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.covid-19{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: blue;
+    margin: 0 40px 20px 0;
+}
+
+#form4{
+    position:relative;
+    max-width:300px;	
+    margin: 0 100px 20px 0;
+}
+
+#sbox4{
+    height:43px;
+    width: 320px;
+    padding:0 10px; 
+    border-radius:25px;
+    outline:0;
+    background:rgba(255, 255, 255, 0.62);
+}
+
+#sbtn4{
+    height:45px;
+    width:50px;	
+    position:absolute; 
+    left:300px; 
+    top: -1.5px;
+    background: #9B1750;
+    color:white;
+    border-radius:0 25px 25px 0;
+}
+
+#sbtn4 .fa-search{
+    font-size:20px;	
+    position:absolute;
+    top:30%;
+    left:30%;	
+}
+
+#sbtn4:hover{
+    color:#888;
+}
+
+
+
+nav{
+    background: #9B1750;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div{
+    margin: 15px 55px 0 55px;
+}
+
+#events{
+    color: white;
+}
+
+nav a{
+    color: rgba(0, 0, 0, 0.387);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.ham{
+    display: none;
+}
+
+
+
+
+.contents{
+    display: flex;
+}
+
+aside{
+    width: 30%;
+    height: 100%;
+    padding: 50px 0 0 180px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+aside div{
+    padding-left: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+aside div:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+aside span{
+    opacity: 0;
+}
+
+span.show{
+    opacity:1;
+}
+
+.category{
+    margin-bottom: 50px;
+}
+
+
+
+
+.plays,.musicals,.cinema,.ballet,.others,.tours,.classical-music,.classics,.tony{
+    display: none;
+}
+
+main{
+    width: 80%;
+    height: 1500px;
+    background-color: #E3E3DF;
+    padding: 50px 0 50px 80px;
+    overflow: scroll;
+}
+
+.featured{
+    height: 420px;
+    width: 1120px;
+}
+
+.featured h4{
+    margin-bottom: 15px;
+}
+
+
+.featured-shows img{   
+    box-shadow: 0 3px 3px rgb(161, 161, 161);
+    cursor: pointer;
+}
+
+
+.featured-shows img:hover{
+    box-shadow: -4px 4px 3px gray;
+    cursor: pointer;
+}
+
+
+.slick-prev{
+    left: -40px;
+}
+
+/* .slick-next{
+    right: 1px;
+} */
+
+
+
+
+.proxy-article img,.real-article img{
+    box-shadow: 0px 3px 3px rgb(161, 161, 161);
+}
+
+.arts{
+    padding: 30px;
+    margin: 20px 0 50px 0;
+    background-color: white;
+    width: 90%;
+    height: auto;
+    display: flex;
+    box-shadow: 0px 3px 2px rgb(161, 161, 161);
+}
+
+.arts:hover{
+    box-shadow: -4px 4px 3px gray ;
+    cursor: pointer;
+}
+
+.data{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.title{
+    font-weight: 500;
+    font-size: 40px;
+}
+.money{
+    margin: 10px 0 0 5px;
+    display: flex;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.amount{
+    font-weight: 600;
+    font-size: 30px;
+    color: green;
+}
+.money p:nth-child(1){
+    margin-right: 10px;
+
+}
+
+.time{
+    margin: 10px 0 0 5px;
+}
+.tags{
+    margin: 10px 0 0 5px;
+    display: flex;
+}
+
+.tag{
+    border: 1px solid gray;
+    padding: 2px 15px;
+    margin-right: 8px;
+    border-radius: 30px;
+}
+.doing{
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.doing button{
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    border-radius: 15px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.doing button:hover{
+    background-color: rgb(0, 0, 193);
+}
+
+
+.doing p{
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.doing a{
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+
+
+
+/* =========== modal ============ */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 500px;
+    height: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@keyframes animatetop{
+    from{
+        top:-300px;
+        opacity: 0;
+    }
+
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.close{
+    color: black;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-header{
+    width: 500px;
+    border-bottom: 1px solid gray;
+    padding: 50px 0 40px 0;
+    color: #2b2b2b;
+    font-weight: 800;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body{
+    padding: 2em 1em 0 1em;
+}
+
+.inside-policy{
+    width: 450px;
+}
+
+.inside-policy2{
+    width: 450px;
+    background-color: rgb(198, 250, 198);
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.modal-footer{
+    font-size: 23px;
+    font-weight: 700;
+    padding: 20px 40px;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.modal-footer:hover{
+    background-color: rgb(0, 63, 199);
+}
+
+/* ========================== */
+
+
+
+
+
+
+
+footer{
+    background: #5D001D;
+    
+    color: white;
+    padding: 120px;
+}
+
+.upper{
+    display: flex;
+    
+}
+.left-area{
+    display: flex;
+    margin: 30px 10px 0 0;
+    
+}
+
+#myList{
+    width: 600px;
+    height: 50px;
+    border: 2px solid white;
+    margin-left: 20px;
+    padding: 0 20px;
+    font-size: 35px;
+    border-radius: 10px;
+    background: #5D001D;
+    color: white;
+}
+
+.right-area{
+    margin: 30px 10px 0 100px;
+}
+.right-area div{
+    margin-bottom: 30px;
+    
+}
+
+.line-area{
+    height: 170px;
+    margin-top: 100px;
+    padding: 0 50px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+.building{
+    display: flex;
+    align-items: center;
+}
+
+.building img{
+    margin-right: 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 22px;
+}
+
+.anniversary{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.multimedia{
+    margin-top: 15px;
+}
+
+
+.sns{
+    border-left: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 600px;
+}
+
+.sns img{  
+    margin-left: 50px;
+}
+.sns img:hover{
+    width: 73px;
+    height: auto;
+}
+
+
+footer .large{
+    font-size: 45px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+}
+
+footer .large-2{
+    font-size: 45px;
+    margin-left: 30px;
+    
+}
+
+footer .mini{
+    font-size: 28px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+footer .mini-2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 23px;
+    margin-top: 15px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+    
+
+

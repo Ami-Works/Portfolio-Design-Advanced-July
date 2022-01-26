@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;500;600;700;900&display=swap');
+/* 
+font-family: 'Spartan', sans-serif;
+*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p,div{
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 900;
+    font-size: 370px;
+    opacity: 0.6;
+}
+
+h3{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+
+}
+
+h4{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+
+header{
+    background: #E3E2DE;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div:nth-child(1){
+    display: flex;
+
+}
+
+.theater-name{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 45px;
+    color: #9B1750;
+    margin: 20px 0 0 10px;
+}
+
+header div:nth-child(2){
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.covid-19{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: blue;
+    margin: 0 40px 20px 0;
+}
+
+#form4{
+    position:relative;
+    max-width:300px;	
+    margin: 0 100px 20px 0;
+}
+
+#sbox4{
+    height:43px;
+    width: 320px;
+    padding:0 10px; 
+    border-radius:25px;
+    outline:0;
+    background:rgba(255, 255, 255, 0.62);
+}
+
+#sbtn4{
+    height:45px;
+    width:50px;	
+    position:absolute; 
+    left:300px; 
+    top: -1.5px;
+    background: #9B1750;
+    color:white;
+    border-radius:0 25px 25px 0;
+}
+
+#sbtn4 .fa-search{
+    font-size:20px;	
+    position:absolute;
+    top:30%;
+    left:30%;	
+}
+
+#sbtn4:hover{
+    color:#888;
+}
+
+
+
+nav{
+    background: #9B1750;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div{
+    margin: 15px 55px 0 55px;
+}
+
+#events{
+    color: white;
+}
+
+nav a{
+    color: rgba(0, 0, 0, 0.387);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+nav a:hover{
+    color: white;
+}
+
+
+
+/* ================== base ================= */
+
+.box{
+    color: #fff;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#box1{
+    position: relative;
+    background: black;
+    z-index: 7;
+}
+#box2{
+    background-image: url(../../images/the-phantom/second-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#box3{
+    position: relative;
+    z-index: 0;
+    background: black;
+}
+#box4{
+    position: relative;
+    z-index: 1;
+    background: black;
+}
+
+
+/*= ページネーションCSS =*/
+
+.pagination {
+  position:fixed;
+  right:20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size:1em;
+  z-index: 10;
+  list-style: none;
+}
+
+.pagination a {
+  display:block;
+  height:20px;
+  margin-bottom:5px;
+  color:#fff;
+  position:relative;
+  padding:4px;
+}
+
+.pagination a.active:after {
+  box-shadow:inset 0 0 0 5px;
+}
+
+/*現在地表示のテキストの設定*/
+.pagination a .hover-text {
+  position:absolute;
+  right:15px;
+  top:0;
+  opacity:0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  padding-right: 15px;
+}
+
+.pagination a:hover .hover-text {
+  opacity: 1;
+}
+
+.pagination a:after {
+  -webkit-transition:box-shadow 0.5s ease;
+  transition:box-shadow 0.5s ease;
+  width:10px;
+  height:10px;
+  display: block;
+  border:1px solid;
+  border-radius:50%;
+  content:"";
+  position: absolute;
+  margin:auto;
+  top:0;
+  right:3px;
+  bottom:0;
+}
+
+/* =================== 1 ==================== */
+
+
+.main_imgBox{
+    height: 1000px;
+    width: 100%;
+    position: relative;
+}
+
+.first{
+    opacity: 0;
+    position: absolute;
+    right: 130px;
+    bottom: 70px;
+    animation: anime 10s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+    animation-delay: 1s;
+}
+
+.second{
+    opacity: 0;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    animation: anime 10s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+    animation-delay: 10s;
+}
+
+.third{
+    opacity: 0;
+    position: absolute;
+    right: 60px;
+    top: -40px;
+    animation: anime 10s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+    animation-delay: 17s;
+}
+.fourth{
+    opacity: 0;
+    position: absolute;
+    right: 390px;
+    top: 260px;
+    animation: anime-2 10s cubic-bezier(0.5, 1, 0.68, 1) 1 forwards;
+    animation-delay: 24s;
+
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+        transform: scale(1.0) ;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1.0) ;
+        z-index:9;
+    }
+    100% { opacity: 0 
+    }
+}
+
+@keyframes anime-2 {
+    0% {
+        opacity: 0;
+        transform: scale(1.0) ;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1.0) ;
+        z-index:9;
+    }
+    100% { opacity: 1 
+    }
+}
+
+
+/* =================== 2 ==================== */
+
+#mask{
+    position: relative;
+}
+
+.mask{
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    z-index: 6;
+}
+
+.mask:hover{
+    width: 330px;
+    opacity: 0.7;
+}
+
+.area-wrap{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    height: 800px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+}
+
+.area-wrap h1{
+    position: absolute;
+    left: 0;
+    top: -15px;
+}
+
+.area-wrap img{
+    border: 5px solid white;
+}
+.area-wrap p{
+    position: absolute;
+    right: 220px;
+    top: 480px;
+
+    font-weight: 600;
+    font-size: 45px;
+    width: 1150px;
+
+}
+
+.sing{
+    position: absolute;
+    left: 50px;
+    bottom: 320px;
+}
+
+.carten{
+    position: absolute;
+    left: 50px;
+    bottom: 35px;
+}
+
+
+
+
+/* =================== 3 ==================== */
+
+.play-img{
+    position: absolute;
+    left: 480px;
+    top: 20px;
+}
+
+.poster-img{
+    position: absolute;
+    left: 360px;
+    top: 340px;
+    border: 1px solid gray;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.title{
+    position: absolute;
+    left: 560px;
+    top: 410px;
+    font-size: 40px;
+    padding-left: 10px;
+}
+.tickets{
+    font-weight: 500;
+    font-size: 40px;
+    margin: 35px 0 0 -45px;
+}
+.small-intro{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 15px 0 0 -40px;
+}
+
+.money{
+    position: absolute;
+    left: 1380px;
+    top: 340px;
+    background-color: #2b2b2b;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.amount-2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+.start{
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.doller,.last-num{
+    font-weight: 700;
+    font-size: 20px;
+}
+.middle-num{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.money button{
+    background-color: rgb(0, 81, 255);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.money button:hover{
+    opacity: 0.5;
+}
+
+
+
+.white{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.calendar{
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.day{
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 180px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 15px 25px 15px;
+}
+
+.day p{
+    color: #2b2b2b;
+}
+
+.tue p:nth-child(3){
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.day-of-week{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.months{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.day button{
+    background-color: white;
+    box-shadow: 3px 3px 3px gray;
+    color: rgb(0, 81, 255);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
+.view-ca{
+    background-color: white;
+    color: rgb(0, 81, 255);
+    font-weight: 600;
+    font-size: 15px;
+    width: 1300px;
+    padding: 10px 0;
+    margin-bottom: 50px;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.white button:hover{
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+
+/* =================== 4 ==================== */
+
+.rose{
+    background-image: url(../../images/the-phantom/opa50.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+}
+
+/* == left side == */
+
+.on-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid white;
+    padding: 50px 50px;
+}
+
+.theater{
+    font-weight: 700;
+    font-size: 30px;
+    color: #EE4C7D;
+    margin-bottom: 10px;
+}
+
+.address{
+    width: 400px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.seat{
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+
+}
+
+.seat p{
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(0, 81, 255);
+}
+.all{
+    background-color: black;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(0, 81, 255);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* == right side == */
+.on-right{
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.show{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1000px;
+    border-bottom: 1px solid white;
+
+}
+
+.info-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.more{
+    display: flex;
+    width: 360px;
+}
+.more-2{
+    display: flex;
+    width: 550px;
+    margin: 20px 0;
+}
+
+.more img,.more-2 img{
+    margin: 10px 20px 10px 0;
+}
+
+.dlc{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+.theme{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+    
+    width: 1000px;
+    border-bottom: 1px solid white;
+
+    font-weight: 500;
+    font-size: 25px;
+
+    margin: 30px 0;
+}
+
+.sentence{
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.category{
+    display: flex;
+}
+
+.tag{
+    color: white(0, 0, 0, 0.774);
+    padding: 0 30px;
+    margin: 15px 30px 25px 0;
+    border: 1px solid white;
+    border-radius: 20px;
+
+    font-weight: 700;
+    font-size: 23px;
+}
+
+
+
+
+/* ===== Accordion ===== */
+.flip,.panel{
+    width: 1000px;
+    padding: 1em;
+    margin: auto;
+}
+
+.flip{
+    background: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    color: #EE4C7D;
+}
+.flip:hover{
+    background: #cacaca;
+}
+.panel{
+    border-left: 3px solid #eaeaea;
+    margin-top: 5px;
+    display: none;
+}
+
+.kids{
+    font-weight: 700;
+    /* font-size: 23px; */
+}
+
+
+footer{
+    background: #5D001D;
+    
+    color: white;
+    padding: 120px;
+}
+
+.upper{
+    display: flex;
+    
+}
+.left-area{
+    display: flex;
+    margin: 30px 10px 0 0;
+    
+}
+
+#myList{
+    width: 600px;
+    height: 50px;
+    border: 2px solid white;
+    margin-left: 20px;
+    padding: 0 20px;
+    font-size: 35px;
+    border-radius: 10px;
+    background: #5D001D;
+    color: white;
+}
+
+.right-area{
+    margin: 30px 10px 0 100px;
+}
+.right-area div{
+    margin-bottom: 30px;
+    
+}
+
+.line-area{
+    height: 170px;
+    margin-top: 100px;
+    padding: 0 50px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+.building{
+    display: flex;
+    align-items: center;
+}
+
+.building img{
+    margin-right: 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 22px;
+}
+
+.anniversary{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.multimedia{
+    margin-top: 15px;
+}
+
+
+.sns{
+    border-left: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 600px;
+}
+
+.sns img{  
+    margin-left: 50px;
+}
+.sns img:hover{
+    width: 73px;
+    height: auto;
+}
+
+
+footer .large{
+    font-size: 45px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+}
+
+footer .large-2{
+    font-size: 45px;
+    margin-left: 30px;
+    
+}
+
+footer .mini{
+    font-size: 28px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+footer .mini-2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 23px;
+    margin-top: 15px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+    
+
+
